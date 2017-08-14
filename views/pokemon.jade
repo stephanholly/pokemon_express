@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  br
+
+  each poke in pokemon
+      li
+        a(href=`/pokemon/${poke.id}`)=poke.name

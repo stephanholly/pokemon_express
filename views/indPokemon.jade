@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= pokemon.name
+  br
+  p type: #{pokemon.type}
+  p trainer id: #{pokemon.trainer_id}
+  br
+  button
+    a(href="/pokemon/" + pokemon.id + "/edit") edit
+
+  form(method=`POST` action="/pokemon/" + pokemon.id + "/delete")
+    button(type="submit") delete

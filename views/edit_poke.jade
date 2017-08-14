@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= pokemon.name
+
+  form(method=`POST` action=`/pokemon/${pokemon.id}`)
+    input(type="text" name="name" placeholder="name")
+    br
+    input(type="text" name="type" placeholder="type")
+    br
+    input(type="text" name="trainer_id" placeholder="trainer id")
+    br
+    button(type="submit") edit

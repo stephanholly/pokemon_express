@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  br
+
+
+  each trainer in trainers
+      li
+        a(href=`/trainers/${trainer.id}`)=trainer.name
+
+  
