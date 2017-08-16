@@ -23,9 +23,10 @@ router.get('/', function(req, res, next) {
 
 });
 
-// router.new('/new', function(req, res, next) {
-//   res.render('new_poke');
-// });
+//create new pokemon
+router.new('/new', function(req, res, next) {
+  res.render('new_poke');
+});
 
 // find pokemon
 router.get('/:id', function(req, res, next) {
